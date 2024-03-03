@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Men Healthcare</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Men's Journal</a>
+            <ul>
+                <li><a href="./login page/login page/login page/index.html" class="active">Sign up</a></li>
+                <li><a href="./about/about/index.html">Explore</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+         <img src="./stars.png" id="stars">
+         <img src="./moon.png" id="moon">
+         <img src="./mountains_behind.png" id="mountains_behind">
+         <h2 id="text">Let's Communicate</h2>
+         <a href="./about/about/index.html" id="btn">Explore</a>
+         <img src="./mountains_front.png" id="mountains_front">   
+        </section>
+        <div class="sec" id="sec">
+            <h2>Men's Journal</h2>
+            <p>In a world where the conversation around mental health is gradually becoming more open, there remains a significant gap when it comes to addressing men's mental well-being. Societal expectations, stereotypes, and traditional gender norms often discourage men from seeking help or discussing their struggles openly. As a result, many men suffer in silence, facing issues such as depression, anxiety, and stress without adequate support or resources.
+
+                Recognizing the pressing need to create a safe space for men to discuss their mental health concerns, a dedicated team of professionals has launched a groundbreaking website focused exclusively on men's mental well-being. This innovative platform aims to break the stigma surrounding men's mental health and provide a supportive environment where men can share their experiences, seek guidance, and access valuable resources.
+                
+                The website offers a wealth of informative articles, insightful personal stories, and expert advice tailored specifically to address the unique challenges that men face in relation to their mental health. From coping mechanisms for managing stress to strategies for overcoming depression and anxiety, the platform covers a wide range of topics designed to empower men to take control of their mental well-being.
+                
+                One of the key objectives of the website is to foster open and honest conversations about mental health among men. Through featured interviews, podcasts, and interactive forums, users are encouraged to engage with one another, share their stories, and offer support. By creating a sense of community and solidarity, the platform seeks to combat the isolation and loneliness that many men experience when grappling with mental health issues.
+                
+                
+                In conclusion, the launch of this website represents a significant step forward in addressing the often-overlooked issue of men's mental health. By breaking the silence and challenging societal taboos, the platform aims to create a more inclusive and supportive environment where all individuals feel comfortable seeking help and support for their mental well-being. Together, we can work towards building a healthier, happier future for men everywhere.</p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
